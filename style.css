@@ -1,0 +1,105 @@
+/* Général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d9e4e7;
+}
+
+/* Conteneur de la calculatrice */
+.calculatrice {
+    background-color: #100e0e;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px;
+}
+
+/* L'écran de la calculatrice */
+.ecran {
+    background-color: #8f8ff0;
+    color: #fff;
+    font-size: 2em;
+    text-align: right;
+    padding: 50px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Boutons */
+.touches {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.bouton {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    text-align: center;
+}
+
+.bouton:hover {
+    background-color: #eaeaea;
+    transform: scale(1.05);
+}
+
+.bouton:active {
+    background-color: #d4d4d4;
+}
+
+/* Styles spécifiques pour les boutons spéciaux */
+.bouton:nth-child(1) { background-color: #ff7043; color: white; }
+.bouton:nth-child(2),
+.bouton:nth-child(3) { background-color: #ffcc80; }
+.bouton:nth-child(4) { background-color: #ffb74d; color: white; }
+.bouton:nth-child(5),
+.bouton:nth-child(6),
+.bouton:nth-child(7) { background-color: #81c784; color: white; }
+.bouton:nth-child(8) { background-color: #66bb6a; color: white; }
+.bouton:nth-child(9),
+.bouton:nth-child(10),
+.bouton:nth-child(11) { background-color: #4caf50; color: white; }
+.bouton:nth-child(12) { background-color: #388e3c; color: white; }
+.bouton:nth-child(13),
+.bouton:nth-child(14),
+.bouton:nth-child(15) { background-color: #2196f3; color: white; }
+.bouton:nth-child(16) { background-color: #1976d2; color: white; }
+.bouton:nth-child(17) { background-color: #64b5f6; color: white; }
+.bouton:nth-child(18) { background-color: #3f51b5; color: white; }
+
+/* Pour rendre les boutons plus grands et centrés */
+.bouton {
+    font-size: 1.25em;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .calculatrice {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .ecran {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+    
+    .bouton {
+        font-size: 1em;
+        padding: 15px;
+    }
+}
