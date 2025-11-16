@@ -79,12 +79,18 @@ body {
 .bouton:nth-child(15) { background-color: #2196f3; color: white; }
 .bouton:nth-child(16) { background-color: #1976d2; color: white; }
 .bouton:nth-child(17) { background-color: #64b5f6; color: white; }
-.bouton:nth-child(18) { background-color: #3f51b5; color: white; }
+.bouton:nth-child(18) {background-color: #3f51b5; color: white; }
 
 /* Pour rendre les boutons plus grands et centrés */
 .bouton {
     font-size: 1.25em;
 }
+
+/* Bouton = qui occupe deux colonnes */
+.bouton:last-child {
+    grid-column: span 2;
+}
+
 
 /* Responsive design */
 @media (max-width: 400px) {
