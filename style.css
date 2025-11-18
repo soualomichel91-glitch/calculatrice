@@ -21,6 +21,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 400px;
     padding: 20px;
+    margin-bottom: 25px;
 }
 
 /* L'écran de la calculatrice */
@@ -108,4 +109,22 @@ body {
         font-size: 1em;
         padding: 15px;
     }
+}
+
+
+/* footer */
+
+footer {
+    background-color: #333; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Alignement du texte */
+    padding: 10px; /* Espacement autour du texte */
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Le footer couvre toute la largeur */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px; /* Taille du texte */
 }
